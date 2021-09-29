@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试报告</title>
+    <style>
+        .bottom{
+            text-align:center;
+            width:140px;
+        }
+        .bottom_case{
+            text-align:center;
+            width:7px;
+        }
+        .case{
+            text-align:left;
+            width:315px;
+        }
+        table{
+            border-collapse:collapse;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body bgcolor="beige">
+    <h1 align="center">自动化测试报告</h1>
+    <div id="summery_moudle" align="center" width="1120px">
+        <table border="1">
+            <tr>
+                <td class="bottom" width="100">序号</td>
+                <td class="bottom">模块</td>
+                <td class="bottom">用例数</td>
+                <td class="bottom">通过数</td>
+                <td class="bottom">失败数</td>
+                <td class="bottom">跳过数</td>
+            </tr>
+            <tr>
+                <td class="bottom">1</td>
+                <td class="bottom">&module</td>
+                <td class="bottom">&total</td>
+                <td class="bottom">&pass</td>
+                <td class="bottom">&fail</td>
+                <td class="bottom">&skip</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="detail_module" align="center" width:1120px;>
+        <table border="1">
+            <tr>
+                <td class="bottom_case">序号</td>
+                <td class="case">用例名称</td>
+                <td class="bottom_case">测试项</td>
+                <td class="case">测试数据</td>
+                <td class="bottom_case">测试结果</td>
+            </tr>
+            &detail
+        </table>
+    </div>
+</body>
+</html>

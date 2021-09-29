@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试报告</title>
+    <style>
+        .top{
+            text-align:center;
+            width:140px;
+        }
+        .bottom{
+            text-align:center;
+            width:189px;
+        }
+        table{
+            border-collapse:collapse;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body bgcolor="beige">
+    <h1 align="center">自动化测试报告</h1>
+    <div id="summery" align="center">
+        <table border="1">
+            <tr>
+                <td class="top">测试版本</td><td class="top">&version</td>
+                <td class="top">测试日期</td><td class="top">&data</td>
+                <td class="top">测试人员</td><td class="top">&tester</td>
+                <td class="top">测试用例数</td><td class="top">&total</td>
+            </tr>
+            <tr>
+                <td class="top">通过数</td><td class="top">&pass</td>
+                <td class="top">失败数</td><td class="top">&fail</td>
+                <td class="top">跳过数</td><td class="top">&skip</td>
+                <td class="top">通过率</td><td class="top">&rate</td>
+
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="summery_moudle" align="center">
+        <table border="1">
+            <tr>
+                <td class="bottom">序号</td>
+                <td class="bottom">模块</td>
+                <td class="bottom">用例数</td>
+                <td class="bottom">通过数</td>
+                <td class="bottom">失败数</td>
+                <td class="bottom">跳过数</td>
+            </tr>
+            &detail
+        </table>
+    </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试报告</title>
+    <style>
+        .bottom{
+            text-align:center;
+            width:140px;
+        }
+        .bottom_case{
+            text-align:center;
+            width:7px;
+        }
+        .case{
+            text-align:left;
+            width:315px;
+        }
+        table{
+            border-collapse:collapse;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body bgcolor="beige">
+    <h1 align="center">自动化测试报告</h1>
+    <div id="summery_moudle" align="center" width="1120px">
+        <table border="1">
+            <tr>
+                <td class="bottom" width="100">序号</td>
+                <td class="bottom">模块</td>
+                <td class="bottom">用例数</td>
+                <td class="bottom">通过数</td>
+                <td class="bottom">失败数</td>
+                <td class="bottom">跳过数</td>
+            </tr>
+            <tr>
+                <td class="bottom">1</td>
+                <td class="bottom">login</td>
+                <td class="bottom">26</td>
+                <td class="bottom">26</td>
+                <td class="bottom">0</td>
+                <td class="bottom">0</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="detail_module" align="center" width:1120px;>
+        <table border="1">
+            <tr>
+                <td class="bottom_case">序号</td>
+                <td class="case">用例名称</td>
+                <td class="bottom_case">测试项</td>
+                <td class="case">测试数据</td>
+                <td class="bottom_case">测试结果</td>
+            </tr>
+            <tr><td class="bottom">1</td>
+                <td class="case">输入错误账号，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin123', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">2</td>
+                <td class="case">不输入验证码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">3</td>
+                <td class="case">输入错误验证码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '1234']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">4</td>
+                <td class="case">输入错误密码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', '123123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">5</td>
+                <td class="case">输入错误账号，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin123', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">6</td>
+                <td class="case">输入有效用户，登录成功</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">7</td>
+                <td class="case">不输入验证码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">8</td>
+                <td class="case">输入错误验证码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '1234']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">9</td>
+                <td class="case">输入错误密码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', '123123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">10</td>
+                <td class="case">输入有效用户，登录成功</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">11</td>
+                <td class="case">输入有效用户，登录成功</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">12</td>
+                <td class="case">输入错误账号，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin123', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">13</td>
+                <td class="case">输入错误密码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', '123123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">14</td>
+                <td class="case">输入错误验证码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '1234']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">15</td>
+                <td class="case">不输入验证码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">16</td>
+                <td class="case">输入错误账号，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin123', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">17</td>
+                <td class="case">输入有效用户，登录成功</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">18</td>
+                <td class="case">输入错误密码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', '123123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">19</td>
+                <td class="case">输入错误验证码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '1234']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">20</td>
+                <td class="case">不输入验证码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">21</td>
+                <td class="case">输入错误账号，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin123', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">22</td>
+                <td class="case">输入有效用户，登录成功</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">23</td>
+                <td class="case">输入错误密码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', '123123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">24</td>
+                <td class="case">输入错误验证码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '1234']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">25</td>
+                <td class="case">不输入验证码，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin', 'admin123', '']</td>
+                <td class="bottom">Pass</td>
+            </tr><tr><td class="bottom">26</td>
+                <td class="case">输入错误账号，登录失败</td>
+                <td class="bottom">login</td>
+                <td class="case">['admin123', 'admin123', '0000']</td>
+                <td class="bottom">Pass</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

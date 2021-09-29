@@ -1,0 +1,13 @@
+用例名称,登录接口,,,
+请求URL,http://10.0.0.159:5566/login,,,
+请求方法,POST,,,
+前置条件,系统存在有效用户,,,
+请求头,,,,
+是否执行,N,,,
+描述,请求参数,状态码,返回信息,说明
+使用有效的管理员账号登录,"{""account"":""admin"",""password"":""123456""}",1000,login success,
+使用有效的普通账号登录,"{""account"":""user1"",""password"":""123456""}",1000,login success,
+不传入账号,"{""account"":"""",""password"":""123456""}",1002,parameter error,
+不传入密码,"{""account"":""user1"",""password"":""""}",1002,parameter error,
+传入错误账号,"{""account"":""user111"",""password"":""123456""}",1003,account password error,
+传入错误密码,"{""account"":""user1"",""password"":""00000""}",1003,account password error,
